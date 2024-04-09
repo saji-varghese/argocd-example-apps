@@ -60,6 +60,7 @@ spec:
       containers:
         - name: page-up
           image: alpine:latest
+          imagePullPolicy: Never
           command: ["sleep", "2"]
       restartPolicy: Never
   backoffLimit: 0
@@ -83,6 +84,7 @@ spec:
       containers:
         - name: main
           image: nginx:latest
+          imagePullPolicy: Never
 ---
 apiVersion: v1
 kind: Service
@@ -112,5 +114,6 @@ spec:
       containers:
         - name: page-down
           image: alpine:latest
+          imagePullPolicy: Never
           command: ["sleep", "2"]
       restartPolicy: Never
