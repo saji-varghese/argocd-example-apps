@@ -12,5 +12,6 @@ spec:
       - name: sleep
         image: alpine:latest
         command: ["sleep", "10"]
+        imagePullPolicy: Never
       restartPolicy: Never
   backoffLimit: 0
