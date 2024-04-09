@@ -32,6 +32,7 @@ spec:
       containers:
         - name: main
           image: nginx:latest
+          imagePullPolicy: Never
 ---
 apiVersion: v1
 kind: Service
