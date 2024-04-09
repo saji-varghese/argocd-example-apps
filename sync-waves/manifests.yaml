@@ -11,6 +11,7 @@ spec:
       containers:
         - name: upgrade-sql-schema
           image: alpine:latest
+          imagePullPolicy: Never
           command: ["sleep", "5"]
       restartPolicy: Never
 ---
